@@ -55,4 +55,5 @@ echo   OrangeFox Recovery has been installed on your device.
 echo  ==============================================================
 echo.
 pause
+exit
 
