@@ -8,10 +8,14 @@ Simple Windows batch script to automatically flash and boot OrangeFox Recovery o
 - Clean and easy to use (just one click)
 - Made by **Wildan Hermawan**
 
+---
+
 ## Requirements
 - Unlocked bootloader
 - ADB & Fastboot drivers installed
 - USB Debugging enabled on your phone
+  
+---
 
  ## How to Use
 1. Download or clone this repository  
@@ -22,3 +26,5 @@ Simple Windows batch script to automatically flash and boot OrangeFox Recovery o
    A. Double click OFOX.bat
    B. Follow the on-screen instructions
 4. Wait until it finishes and your phone reboots into OrangeFox recovery 🎉
+   
+---
