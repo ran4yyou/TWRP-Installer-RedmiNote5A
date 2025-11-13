@@ -15,6 +15,7 @@ ECHO.
 echo  Ensure the phone is connected and USB Debugging is enabled.
 echo.
 timeout /t 2 >nul
+
 :: ====== ADB PREPARATION ======
 color 0A
 echo [ INFO ]  Terminating running ADB processes...
@@ -27,8 +28,15 @@ echo.
 adb devices
 echo.
 pause
+
 :: ====== ENTER FASTBOOT MODE ======
 color 0E
 echo [ ACTION ]  Rebooting to fastboot mode...
 adb reboot bootloader
 timeout /t 5 >nul
+
+:: ====== FLASHING ORANGEFOX ======
+color 0C
+echo [ FLASH ]  Erasing old recovery..
+fastboot erase recovery
+
