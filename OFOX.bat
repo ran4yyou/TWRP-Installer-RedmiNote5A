@@ -22,3 +22,8 @@ taskkill /f /im "adb.exe" >nul 2>nul
 cd /d %~dp0adb
 adb kill-server
 adb start-server
+echo [ INFO ]  Checking for connected devices...
+echo.
+adb devices
+echo.
+pause
