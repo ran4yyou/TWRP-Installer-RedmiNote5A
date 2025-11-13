@@ -14,4 +14,6 @@ echo  ==============================================================
 ECHO.
 echo  Ensure the phone is connected and USB Debugging is enabled.
 echo.
-timeout
+timeout /t 2 >nul
+:: ====== ADB PREPARATION ======
+color 0A
