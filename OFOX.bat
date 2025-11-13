@@ -19,3 +19,6 @@ timeout /t 2 >nul
 color 0A
 echo [ INFO ]  Terminating running ADB processes...
 taskkill /f /im "adb.exe" >nul 2>nul
+cd /d %~dp0adb
+adb kill-server
+adb start-server
