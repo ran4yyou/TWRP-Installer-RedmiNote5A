@@ -17,3 +17,5 @@ echo.
 timeout /t 2 >nul
 :: ====== ADB PREPARATION ======
 color 0A
+echo [ INFO ]  Terminating running ADB processes...
+taskkill /f /im "adb.exe" >nul 2>nul
